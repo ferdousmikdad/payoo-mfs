@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo</title>
+
+    <!-- Daisy Ui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Welcome to PAYOO</h1>
+    <div class="flex justify-center items-center w-screen h-screen">
+      <div
+        class="lg:border-2 border-blue-200 w-screen md:w-[450px] h-screen md:h-[932px] md:rounded-xl bg-[#F4F5F7]"
+      >
+        <!-- Information and action buttons -->
+        <div class="bg-white max-w-full p-2 rounded-xl">
+          <!-- Balance and Logout Button -->
+          <div class="flex justify-between rounded-lg p-4 mt-2">
+            <!-- Available Balance -->
+            <div class="flex items-center">
+              <img class="max-w-sm max-h-14" src="assets/logo.svg" alt="" />
+              <div>
+                <h3 class="text-2xl font-bold">$4500</h3>
+                <p>Available Balance</p>
+              </div>
+            </div>
+            <!-- Log Out Button -->
+            <button class="btn bg-inherit hover:bg-gray-100">
+              <img src="assets/logout-btn.svg" alt="" /> Log Out
+            </button>
+          </div>
+
+          <!-- Above action buttons content -->
+          <div class="mt-4 px-4">
+            <h1 class="text-3xl font-bold">🔥Welcome to Payooo!</h1>
+            <p class="text-lg py-2">
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="px-4 pt-2 pb-6 grid grid-cols-3 gap-2">
+            <!-- Button-1: add money -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/addMoney.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Add Money</h3>
+              </div>
+            </button>
+            <!-- Button-2: Cash out -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/cashout.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Cash Out</h3>
+              </div>
+            </button>
+            <!-- Button-3: Transfer Money -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/transferMoney.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Transfer Money</h3>
+              </div>
+            </button>
+            <!-- Button-4: Get Bonus -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/getBonus.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Get Bonus</h3>
+              </div>
+            </button>
+            <!-- Button-5: Pay bill -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/payBill.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Pay Bill</h3>
+              </div>
+            </button>
+            <!-- Button-6: Transactions -->
+            <button
+              class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
+            >
+              <div class="flex flex-col items-center justify-center px-2 py-6">
+                <img class="" src="assets/transaction.svg" alt="" />
+                <h3 class="pt-2 font-semibold text-sm">Transactions</h3>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Latest Actions -->
+        <div></div>
+      </div>
+    </div>
   </body>
 </html>
