@@ -27,7 +27,7 @@
             <div class="flex items-center">
               <img class="max-w-sm max-h-14" src="assets/logo.svg" alt="" />
               <div>
-                <h3 class="text-2xl font-bold">$4500</h3>
+                <h3 id="account-balance" class="text-2xl font-bold">00</h3>
                 <p>Available Balance</p>
               </div>
             </div>
@@ -124,7 +124,7 @@
             </div>
 
             <!-- Bank Account Number -->
-            <div class="mt-2">
+            <!-- <div class="mt-2">
               <h3 class="text-lg text-gray-600 font-semibold py-2">
                 Bank Account Number
               </h3>
@@ -133,7 +133,7 @@
                 placeholder="Type here"
                 class="input input-bordered w-full"
               />
-            </div>
+            </div> -->
 
             <!-- Amount to Add -->
             <div class="mt-2">
@@ -141,8 +141,9 @@
                 Amount to Add
               </h3>
               <input
-                type="text"
-                placeholder="Type here"
+                id="input-add-money"
+                type="number"
+                placeholder="Add amount"
                 class="input input-bordered w-full"
               />
             </div>
@@ -153,14 +154,16 @@
                 Enter 4 digit pin number
               </h3>
               <input
-                type="text"
-                placeholder="Type here"
+                id="input-pin-number"
+                type="password"
+                placeholder="Enter your pin"
                 class="input input-bordered w-full"
               />
             </div>
 
             <!-- Button -->
             <button
+              id="btn-add-money"
               class="text-white text-center p-2.5 mt-4 bg-blue-700 rounded-lg w-full"
             >
               Add Money
