@@ -18,7 +18,7 @@ document.getElementById('btn-login')
 
         // step-4: validate mobile and pin number
         // this is the temporary (bad) way
-        if(mobileNumber === '5' && pinNumber === '123'){
+        if(mobileNumber === 'admin' && pinNumber === 'admin'){
             console.log('You are logged in');
             // step-5: allow user to website 
             window.location.href = './home.html';
