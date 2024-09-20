@@ -29,4 +29,29 @@ document.getElementById('btn-add-money')
     else{
         alert('Failed to add money');
     }
-})
+});
+
+
+
+document.getElementById('btn-cash-out')
+    .addEventListener('click' , function(event){
+    event.preventDefault();
+
+    const inputCashOut = document.getElementById('input-cash-out').value;
+    const inputPinNumber = document.getElementById('input-pin-number').value;
+
+    if(inputPinNumber === 'admin'){
+
+        const accountBalance = document.getElementById('account-balance').innerText;
+        const cashOutMoney = parseFloat(inputCashOut);
+        const balanceNumber = parseFloat(accountBalance);
+        const newBalance = cashOutMoney - balanceNumber;
+
+        console.log(newBalance);
+        document.getElementById('account-balance').innerText = newBalance;
+
+    }
+    else{
+        alert('Failed to Cash Out');
+    }
+});

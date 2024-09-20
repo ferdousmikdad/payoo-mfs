@@ -50,6 +50,7 @@
           <div class="px-4 pt-2 pb-6 grid grid-cols-3 gap-2">
             <!-- Button-1: add money -->
             <button
+              id="btn-show-add-money"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -59,6 +60,7 @@
             </button>
             <!-- Button-2: Cash out -->
             <button
+              id="btn-show-cash-out"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -106,7 +108,7 @@
         </div>
 
         <!-- Add Money section -->
-        <div class="p-6">
+        <div id="add-money-form" class="p-6">
           <!-- Header and View all button -->
           <h3 class="text-2xl font-bold mb-4">Add Money</h3>
 
@@ -170,11 +172,66 @@
             </button>
           </div>
         </div>
+
+        <!-- Cash out section -->
+        <div id="cash-out-form" class="hidden p-6">
+          <!-- Header and View all button -->
+          <h3 class="text-2xl font-bold mb-4">Cash Out</h3>
+
+          <!-- Add Money form -->
+          <div class="bg-white pt-2 pb-4 px-4 rounded-xl">
+            <!-- Bank Account Number -->
+            <!-- <div class="mt-2">
+              <h3 class="text-lg text-gray-600 font-semibold py-2">
+                Bank Account Number
+              </h3>
+              <input
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered w-full"
+              />
+            </div> -->
+
+            <!-- Amount to Add -->
+            <div class="mt-2">
+              <h3 class="text-lg text-gray-600 font-semibold py-2">
+                Amount to Add
+              </h3>
+              <input
+                id="input-cash-out"
+                type="number"
+                placeholder="Add amount"
+                class="input input-bordered w-full"
+              />
+            </div>
+
+            <!-- Pin Number -->
+            <div class="mt-2">
+              <h3 class="text-lg text-gray-600 font-semibold py-2">
+                Enter 4 digit pin number
+              </h3>
+              <input
+                id="input-pin-number"
+                type="password"
+                placeholder="Enter your pin"
+                class="input input-bordered w-full"
+              />
+            </div>
+
+            <!-- Button -->
+            <button
+              id="btn-cash-out"
+              class="text-white text-center p-2.5 mt-4 bg-blue-700 rounded-lg w-full"
+            >
+              Cash Out
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="js/add.js"></script>
     <script src="js/logout.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
