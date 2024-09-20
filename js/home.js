@@ -45,7 +45,7 @@ document.getElementById('btn-cash-out')
         const accountBalance = document.getElementById('account-balance').innerText;
         const cashOutMoney = parseFloat(inputCashOut);
         const balanceNumber = parseFloat(accountBalance);
-        const newBalance = cashOutMoney - balanceNumber;
+        const newBalance = balanceNumber - cashOutMoney;
 
         console.log(newBalance);
         document.getElementById('account-balance').innerText = newBalance;
