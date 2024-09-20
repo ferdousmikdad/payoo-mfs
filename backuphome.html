@@ -17,7 +17,7 @@
   <body>
     <div class="flex justify-center items-center w-screen h-screen">
       <div
-        class="lg:border-2 border-blue-200 w-screen md:w-[450px] md:rounded-xl bg-[#F4F5F7]"
+        class="lg:border-2 border-blue-200 w-screen md:w-[450px] h-screen md:h-[932px] md:rounded-xl bg-[#F4F5F7]"
       >
         <!-- Information and action buttons -->
         <div class="bg-white max-w-full p-2 rounded-xl">
@@ -105,73 +105,95 @@
           </div>
         </div>
 
-        <!-- Add Money section -->
+        <!-- Latest Actions -->
         <div class="p-6">
           <!-- Header and View all button -->
-          <h3 class="text-2xl font-bold mb-4">Add Money</h3>
+          <div class="flex justify-between">
+            <h3 class="text-2xl font-bold">Latest Payment</h3>
+            <button class="hover:text-blue-600">View All</button>
+          </div>
 
-          <!-- Add Money form -->
-          <div class="bg-white pt-2 pb-4 px-4 rounded-xl">
-            <div class="">
-              <h3 class="text-lg text-gray-600 font-semibold py-2">
-                Select A Bank
-              </h3>
-              <select class="select select-bordered w-full">
-                <option disabled selected>Select bank</option>
-                <option>Islami Bank</option>
-                <option>Dutch Bangla Bank</option>
-              </select>
-            </div>
-
-            <!-- Bank Account Number -->
-            <div class="mt-2">
-              <h3 class="text-lg text-gray-600 font-semibold py-2">
-                Bank Account Number
-              </h3>
-              <input
-                type="text"
-                placeholder="Type here"
-                class="input input-bordered w-full"
-              />
-            </div>
-
-            <!-- Amount to Add -->
-            <div class="mt-2">
-              <h3 class="text-lg text-gray-600 font-semibold py-2">
-                Amount to Add
-              </h3>
-              <input
-                type="text"
-                placeholder="Type here"
-                class="input input-bordered w-full"
-              />
-            </div>
-
-            <!-- Pin Number -->
-            <div class="mt-2">
-              <h3 class="text-lg text-gray-600 font-semibold py-2">
-                Enter 4 digit pin number
-              </h3>
-              <input
-                type="text"
-                placeholder="Type here"
-                class="input input-bordered w-full"
-              />
-            </div>
-
-            <!-- Button -->
-            <button
-              class="text-white text-center p-2.5 mt-4 bg-blue-700 rounded-lg w-full"
+          <!-- History -->
+          <div class="grid grid-cols-1">
+            <!-- history-1 -->
+            <div
+              class="bg-white py-2 px-4 my-2 rounded-xl border flex justify-between hover:border hover:border-blue-200"
             >
-              Add Money
-            </button>
+              <div class="flex items-center-center">
+                <img
+                  class="bg-gray-100 rounded-full p-4 mr-4"
+                  src="assets/addMoney.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-600">
+                    Electricity Bill
+                  </h3>
+                  <p class="text-gray-400">Today 01:44 AM</p>
+                </div>
+              </div>
+              <img src="assets/threedot.svg" alt="" />
+            </div>
+            <!-- history-2 -->
+            <div
+              class="bg-white py-2 px-4 my-2 rounded-xl border flex justify-between hover:border hover:border-blue-200"
+            >
+              <div class="flex items-center-center">
+                <img
+                  class="bg-gray-100 rounded-full p-4 mr-4"
+                  src="assets/addMoney.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-600">
+                    Bank Deposit
+                  </h3>
+                  <p class="text-gray-400">Today 01:44 AM</p>
+                </div>
+              </div>
+              <img src="assets/threedot.svg" alt="" />
+            </div>
+            <!-- history-3 -->
+            <div
+              class="bg-white py-2 px-4 my-2 rounded-xl border flex justify-between hover:border hover:border-blue-200"
+            >
+              <div class="flex items-center-center">
+                <img
+                  class="bg-gray-100 rounded-full p-4 mr-4"
+                  src="assets/addMoney.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-600">
+                    Mobile Recharge
+                  </h3>
+                  <p class="text-gray-400">Today 01:44 AM</p>
+                </div>
+              </div>
+              <img src="assets/threedot.svg" alt="" />
+            </div>
+            <!-- history-1 -->
+            <div
+              class="bg-white py-2 px-4 my-2 rounded-xl border flex justify-between hover:border hover:border-blue-200"
+            >
+              <div class="flex items-center-center">
+                <img
+                  class="bg-gray-100 rounded-full p-4 mr-4"
+                  src="assets/addMoney.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-600">Gas Bill</h3>
+                  <p class="text-gray-400">Today 01:44 AM</p>
+                </div>
+              </div>
+              <img src="assets/threedot.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="js/add.js"></script>
     <script src="js/logout.js"></script>
-    <script src="js/home.js"></script>
   </body>
 </html>
