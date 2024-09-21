@@ -15,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex justify-center items-center w-screen h-screen">
+    <div class="flex justify-center">
       <div
         class="lg:border-2 border-blue-200 w-screen md:w-[450px] md:rounded-xl bg-[#F4F5F7]"
       >
@@ -70,6 +70,7 @@
             </button>
             <!-- Button-3: Transfer Money -->
             <button
+              id="btn-show-transfer-money"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -79,6 +80,7 @@
             </button>
             <!-- Button-4: Get Bonus -->
             <button
+              id="btn-show-get-bonus"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -88,6 +90,7 @@
             </button>
             <!-- Button-5: Pay bill -->
             <button
+              id="btn-show-pay-bill"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -97,6 +100,7 @@
             </button>
             <!-- Button-6: Transactions -->
             <button
+              id="btn-show-transactions"
               class="border rounded-lg hover:border hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50"
             >
               <div class="flex flex-col items-center justify-center px-2 py-6">
@@ -108,7 +112,7 @@
         </div>
 
         <!-- Add Money section -->
-        <div id="add-money-form" class="p-6">
+        <div id="add-money-form" class="hidden p-6">
           <!-- Header and View all button -->
           <h3 class="text-2xl font-bold mb-4">Add Money</h3>
 
@@ -209,7 +213,7 @@
                 Enter your pin number
               </h3>
               <input
-                id="input-pin-number"
+                id="input-cash-out-pin"
                 type="password"
                 placeholder="Enter your pin"
                 class="input input-bordered w-full"
@@ -225,11 +229,45 @@
             </button>
           </div>
         </div>
+
+        <!-- Latest Actions -->
+        <div id="transaction-section" class="p-6">
+          <!-- Header and View all button -->
+          <div class="flex justify-between">
+            <h3 class="text-2xl font-bold">Latest Payment</h3>
+            <button class="hover:text-blue-600">View All</button>
+          </div>
+
+          <!-- History -->
+          <div id="transaction-container" class="grid grid-cols-1">
+            <!-- history -->
+            <div
+              class="bg-white py-2 px-4 my-2 rounded-xl border flex justify-between hover:border hover:border-blue-200"
+            >
+              <div class="flex items-center-center">
+                <img
+                  class="bg-gray-100 rounded-full p-4 mr-4"
+                  src="assets/addMoney.svg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-600">
+                    Electricity Bill
+                  </h3>
+                  <p class="text-gray-400">Today 01:44 AM</p>
+                </div>
+              </div>
+              <img src="assets/threedot.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="js/logout.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
   </body>
 </html>
